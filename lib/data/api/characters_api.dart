@@ -27,20 +27,3 @@ class CharactersAPI {
   }
 }
 
-/* This code is gnerated from Postmnan for using the API with dio */
-// var data = '''''';
-// var dio = Dio();
-// var response = await dio.request(
-//   'https://rickandmortyapi.com/api/character/',
-//   options: Options(
-//     method: 'GET',
-//   ),
-//   data: data,
-// );
-//
-// if (response.statusCode == 200) {
-//   print(json.encode(response.data));
-// }
-// else {
-//   print(response.statusMessage);
-// }

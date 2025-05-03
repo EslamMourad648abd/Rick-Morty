@@ -1,24 +1,3 @@
-// import 'package:bloc/bloc.dart';
-// import 'package:meta/meta.dart';
-// import 'package:untitled/data/models/characters.dart';
-// import 'package:untitled/data/repository/characters_repository.dart';
-//
-// part 'characters_state.dart';
-//
-// class CharactersCubit extends Cubit<CharactersState> {
-//
-//   final CharactersRepository charactersRepositiry;
-//
-//    List<Character>? characters;
-//   CharactersCubit(this.charactersRepositiry) : super(CharactersInitial());
-//
-//   List<Character>? getAllCharacters(){
-//     charactersRepositiry.getAllCharacters().then((characters){
-// emit(CharactersLooaded(characters));
-//     });
-//    return characters;
-//   }
-// }
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
 import 'package:untitled/data/models/characters.dart';

@@ -15,17 +15,6 @@ class CharactersScreen extends StatefulWidget {
 }
 
 class _CharactersScreenState extends State<CharactersScreen> {
-  //late List<Characters> allCharacters;
-  //
-  // @override
-  // void initState() {
-  //   // TODO: implement initState
-  //   super.initState();
-  //   allCharacters = BlocProvider.of<CharactersCubit>(context)
-  //       .getAllCharacters()
-  //       .cast<Characters>();
-  // }
-
   late List<Character> allCharacters;
 
   late List<Character> searchForCharacters;
@@ -115,8 +104,6 @@ class _CharactersScreenState extends State<CharactersScreen> {
           allCharacters = state.characters;
           print("State is CharactersLoaded, displaying list"); // Debugging
           return buildLoadedListWidget(state.characters);
-          // allCharacters = (state).characters.cast<Characters>();
-          // return buildLoadedListWidget();
         } else if (state is CharactersError) {
           return Center(child: Text("Error: ${state.message}"));
         } else {

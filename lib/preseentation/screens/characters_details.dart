@@ -30,13 +30,6 @@ class CharacterDetailsScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           // Ensure image is full width
           children: [
-            // Character Image
-            // Image.network(
-            //   character.Image,
-            //   fit: BoxFit.cover,
-            //   width: double.infinity,
-            //   height: 400, // Adjust height as needed
-            // ),
             Stack(
               alignment: Alignment.bottomCenter,
               children: [
@@ -77,17 +70,6 @@ class CharacterDetailsScreen extends StatelessWidget {
                   buildDetailRow("Location:", character.Location),
                   buildDetailRow("Episodes:",
                       character.EpisodeAppearance.length.toString()),
-                  // Padding(
-                  //   padding: const EdgeInsets.all(16.0),
-                  //   child: Column(
-                  //     crossAxisAlignment: CrossAxisAlignment.start,
-                  //     children: [
-                  //       buildDetailRow("Status:", character.StatusIfDeadOrAlive),
-                  //       buildDetailRow("Species:", character.Species),
-                  //       if (character.Type.isNotEmpty) buildDetailRow("Type:", character.Type),
-                  //       buildDetailRow("Gender:", character.Gender),
-                  //       buildDetailRow("Location:", character.Location),
-                  //       buildDetailRow("Episodes:", character.EpisodeAppearance.length.toString()),
                 ],
               ),
             ),
@@ -125,21 +107,3 @@ class CharacterDetailsScreen extends StatelessWidget {
     );
   }
 }
-// padding: const EdgeInsets.symmetric(vertical: 8.0),
-// child: Row(
-//   children: [
-//     Text(
-//       label,
-//       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-//     ),
-//     SizedBox(width: 8),
-//     Expanded(
-//       child: Text(
-//         value,
-//         style: TextStyle(fontSize: 16),
-//         overflow: TextOverflow.ellipsis, // Handle long text
-//         maxLines: 2,
-//       ),
-//     ),
-//   ],
-// ),

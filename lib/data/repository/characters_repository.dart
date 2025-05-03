@@ -2,17 +2,6 @@ import 'package:dio/dio.dart';
 
 import '../models/characters.dart';
 
-// class CharactersRepository{
-//   final CharactersAPI charactersapi;
-//
-//   CharactersRepository(this.charactersapi);
-//
-//   Future<List<Character>> getAllCharacters() async{
-//     final characters = await charactersapi.getAllCharacters();
-//     return characters.map((character) => Character.fromJson(character)).toList();
-//   }
-// }
-
 class CharactersRepository {
   final Dio dio = Dio();
 
